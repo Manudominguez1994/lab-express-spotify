@@ -1,0 +1,12 @@
+<div>
+    <h2>Albums for : The beatles</h2>
+    <div>
+        {{#each oneArtist}}
+            <h3>{{this.name}}</h3> 
+            {{#each this.images.[0]}}
+            <img src="{{this}}" alt="">
+            {{/each}}
+            <a href=""><button>View Tracks</button></a>
+        {{/each}}
+    </div>
+</div>
